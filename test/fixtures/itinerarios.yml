@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idItinerario: MyString
+  fechaLlegada: 2015-07-28
+  fechaSalida: 2015-07-28
+  horaSalida: 2015-07-28 20:13:13
+  Origen_idOrigen: MyString
+  Desino_idDestino: MyString
+
+two:
+  idItinerario: MyString
+  fechaLlegada: 2015-07-28
+  fechaSalida: 2015-07-28
+  horaSalida: 2015-07-28 20:13:13
+  Origen_idOrigen: MyString
+  Desino_idDestino: MyString

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idDestino: MyString
+  nAeropuerto: MyString
+  ciudad: MyString
+  codCiudad: MyString
+
+two:
+  idDestino: MyString
+  nAeropuerto: MyString
+  ciudad: MyString
+  codCiudad: MyString

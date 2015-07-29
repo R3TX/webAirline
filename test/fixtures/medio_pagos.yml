@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  MedioPago: MyString
+  descripcion: MyString
+  monto: 1.5
+  Pasaje_idPasaje: 
+
+two:
+  MedioPago: MyString
+  descripcion: MyString
+  monto: 1.5
+  Pasaje_idPasaje: 

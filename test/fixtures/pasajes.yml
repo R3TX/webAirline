@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idPasaje: 
+  clase: MyString
+  valor: 
+  fecha: 2015-07-28 20:13:10
+  estado: false
+  descripcion: MyString
+  ubicacion: MyString
+  Vuelo_idVuelo: 
+  Client_cedula: 
+
+two:
+  idPasaje: 
+  clase: MyString
+  valor: 
+  fecha: 2015-07-28 20:13:10
+  estado: false
+  descripcion: MyString
+  ubicacion: MyString
+  Vuelo_idVuelo: 
+  Client_cedula: 

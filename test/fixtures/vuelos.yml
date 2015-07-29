@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idVuelo: MyString
+  asientosDisponibles: 
+  obsevaciones: MyString
+  modeloAvion: MyString
+  Itinerario_idItinerario: MyString
+  Avion_idAvion: MyString
+
+two:
+  idVuelo: MyString
+  asientosDisponibles: 
+  obsevaciones: MyString
+  modeloAvion: MyString
+  Itinerario_idItinerario: MyString
+  Avion_idAvion: MyString
