@@ -1,0 +1,24 @@
+<%#%>
+
+<%#%><table  class="table table-striped">
+<%#%>    <tr>
+<%#%>    <th>Id</th>
+<%#%>    <th>idItinerario</th>
+<%#%>    <th>Ciudad Origen</th>
+<%#%>    <th>Ciudad Destino</th>
+<%#%>    <th>Fecha salida</th>
+<%#%>    <th>Hora salida</th>
+  
+<%#%>  </tr>
+<%#%>    <tr>
+<%#%>    <td><%=@itinerarioEscogido.id%></td>
+<%#%>    <td><%=@itinerarioEscogido.idItinerario%></td>
+<%#%>    <td><%=@itinerarioEscogido.origen.ciudad%></td>
+<%#%>    <td><%=@itinerarioEscogido.destino.ciudad%></td>
+<%#%>    <td><%=@itinerarioEscogido.fechaSalida%></td>
+<%#%><%#%>    <td><%=@itinerarioEscogido.horaSalida%></td>
+<%#%>  </tr>
+<%#%></table>
+  
+  
+<%#%> 

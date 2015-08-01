@@ -10,7 +10,7 @@ User.create!(name:  "Example User",
                           telefono: "263542",
                           genero: "m")
 
-99.times do |n|
+30.times do |n|
   name  = Faker::Name.name
   email = "example-#{n+1}@railstutorial.org"
   password = "password"
@@ -30,3 +30,35 @@ User.create!(name:  "Example User",
               genero: genero)
 end
 
+#Origen.create!(ciudad: "medallo")
+
+
+
+10.times do |f|
+  ciudad = Faker::Name.name
+  idOrigen = "000"
+  nAeropuerto = Faker::Address.city
+  codCiudad = Faker::Code.isbn
+  Origen.create!(idOrigen: idOrigen,
+                nAeropuerto: nAeropuerto,
+                ciudad: ciudad,
+                  codCiudad: codCiudad)
+  Destino.create!(idDestino: idOrigen,
+                  nAeropuerto: nAeropuerto,
+                  ciudad: ciudad,
+                  codCiudad: codCiudad)
+end
+ 
+10.times do |n|
+  idIte=Faker::Name.name
+  Itinerario.create!(idItinerario: idIte,
+  fechaLlegada: 1.day.from_now,
+  fechaSalida: 1.day.from_now,
+  horaSalida: 5.hours.from_now,
+  horaLlegada: 6.hours.from_now,
+  origen_id: Origen.find((n%5)+1).id,
+  destino_id: Destino.find((n%5)+1).id
+  )
+end
+
+      

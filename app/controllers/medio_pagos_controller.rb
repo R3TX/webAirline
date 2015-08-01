@@ -1,0 +1,3 @@
+class MedioPagosController < ApplicationController
+
+end

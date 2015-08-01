@@ -1,0 +1,3 @@
+class AvionsController < ApplicationController
+
+end

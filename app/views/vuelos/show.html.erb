@@ -1,0 +1,60 @@
+
+ <%= form_tag('comprar',:method=>:get) do %>    
+<h1>De <%=@ciudadOrigen.ciudad%> A <%=@ciudadDestino.ciudad%></h1>
+<table class="table table-striped">
+  <tr>
+    <th>Id</th>
+    <th>idItinerario</th>
+    <th>Ciudad Origen</th>
+    <th>Ciudad Destino</th>
+    <th>Fecha salida</th>
+    <th>Hora salida</th>
+  
+  </tr>
+ <%@itinerariosSalida.each do |n|%>
+  <tr>
+    <td><%=n.id%></td>
+    <td><%=n.idItinerario%></td>
+    <td><%=n.origen.ciudad%></td>
+    <td><%=n.destino.ciudad%></td>
+    <td><%=n.fechaSalida%></td>
+    <td><%=n.horaSalida%></td>
+    <td> <%= radio_button_tag(:itinerarioIda, n.id, :selected=>true) %></td>
+  </tr>
+  
+<%end%>
+
+</table>
+
+<% if @itinerariosVolver !=nil then%>
+<h1>De <%=@ciudadDestino.ciudad%> A <%=@ciudadOrigen.ciudad%></h1>
+<table class="table table-striped">
+    
+  <tr>
+    <th>Id</th>
+    <th>idItinerario</th>
+    <th>Ciudad Origen</th>
+    <th>Ciudad Destino</th>
+    <th>Fecha salida</th>
+    <th>Hora salida</th>
+  
+  </tr>
+ <%@itinerariosVolver.each do |n|%>
+  <tr>
+    <td><%=n.id%></td>
+    <td><%=n.idItinerario%></td>
+    <td><%=n.origen.ciudad%></td>
+    <td><%=n.destino.ciudad%></td>
+    <td><%=n.fechaSalida%></td>
+    <td><%=n.horaSalida%></td>
+    <td> <%= radio_button_tag(:itinerarioVuelta, n.id, :selected=>true) %></td>
+  </tr>
+  
+<%end%>
+
+</table>
+<%end%>
+
+<td><%= submit_tag "Comprar"%></td>
+
+<%end%>

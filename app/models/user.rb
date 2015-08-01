@@ -1,3 +1,5 @@
+
+
 class User < ActiveRecord::Base
   #crea el atributo virtual para el cookie
   attr_accessor :remember_token, :activation_token, :reset_token

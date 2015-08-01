@@ -3,7 +3,7 @@ class CreateAvions < ActiveRecord::Migration
     create_table :avions do |t|
       t.string :idAvion
       t.string :modeloAvion
-      t.int :capacidad
+      t.integer :capacidad
 
       t.timestamps null: false
     end

@@ -5,6 +5,7 @@ class CreateItinerarios < ActiveRecord::Migration
       t.date :fechaLlegada
       t.date :fechaSalida
       t.time :horaSalida
+      t.time :horaLlegada
       
       t.references :origen, index:true, foreing_key:true
       

@@ -1,0 +1,45 @@
+<table class="table">
+    <%= form_tag('afterSearch',:method=>:get) do %>    
+    <tr>
+    <td> <%= radio_button_tag(:tipo, "I", :selected=>true) %>
+            <%= label_tag(:age_child, "Ida") %>
+    </td>
+    <td> <%= radio_button_tag(:tipo, "IR") %>
+            <%= label_tag(:age_child, "Ida y Regreso") %>
+    </td>
+</tr>
+<tr>
+    <td><%= label_tag "Ciudad de origen"%>
+        <%= select_tag "origen", options_from_collection_for_select(Origen.all, "id", "ciudad")%>
+    </td>
+    <td><%= label_tag "Ciudad de destino"%>
+        <%= select_tag "destino",options_from_collection_for_select(Destino.all, "id", "ciudad")%>
+    </td>
+</tr>
+
+<tr>
+    <td><%= label_tag "Fecha de salida"%> 
+    <%= date_field_tag(:datetime_ida, Date.today,options = {:max=> Date.new(2025, 5, 12), :min=> Date.today   })%>
+    </td>
+    <td><%= label_tag "Fecha de llegada"%> 
+    <%= date_field_tag(:datetime_llegada, Date.today,options = {:min=> Date.today,:max=> Date.new(2025, 5, 12)})%>
+    </td>
+</tr>
+
+
+<tr>
+    <td><%= label_tag "Adultos"%>
+        <%= select_tag "Adultos", options_for_select(1..9)%>
+    </td>
+    <td><%= label_tag "Niños"%>
+        <%= select_tag "Niños",options_for_select(0..9) %>
+    </td>
+</tr>
+<tr>
+    <td><%= submit_tag "Search"%>
+    </td>
+</tr>
+
+ 
+<% end %>
+</table>
